@@ -18,10 +18,10 @@ const Projects = () => {
           <h3>Spartan HIIT Timer (Android)</h3>
 
           <p className='project__description'>
-            Simple mobile timer app built with react-native, meant to be used
-            for interval based exercises. The app is currently in internal beta
-            testing and under review by the android play store but please feel
-            to check out the github repot or download the APK directly.
+            Simple timer app built with react-native, meant to be used for
+            interval based exercises. The app is currently in internal beta
+            testing and under review by the Android play store but please feel
+            free to check out the Github repo or download the APK directly.
           </p>
           <ul className='project__stack'>
             {['TypeScript', 'React-native'].map((item) => (
