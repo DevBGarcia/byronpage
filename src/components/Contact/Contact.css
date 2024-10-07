@@ -1,3 +1,22 @@
 .contact {
   flex-direction: column;
 }
+
+.link--icon {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+.link--icon svg {
+  margin-right: 4px; /* Adjust the space between the icon and the text */
+}
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjust the gap between the links as needed */
+}
