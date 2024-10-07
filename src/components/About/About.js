@@ -48,13 +48,13 @@ const About = () => {
           Github
         </a>
       </div>
-      <h2 className='about__role'>Software Engineer.</h2>
+      {/* <h2 className='about__role'>Software Engineer.</h2> */}
       <p className='about__desc'>
-        I am a dedicated engineer who thrives on contributing to a healthy and
-        positive environment. As a team player, I am committed to going above
-        and beyond to support my colleagues and ensure the success of the
-        company. I am a valuable asset to any team and continuously strive to
-        enhance my engineering skills and knowledge.
+        I am a dedicated software engineer who thrives on contributing to a
+        healthy and positive environment. As a team player, I am committed to
+        going above and beyond to support my colleagues and ensure the success
+        of the company. I am a valuable asset to any team and continuously
+        strive to enhance my engineering skills and knowledge.
       </p>
     </div>
   )

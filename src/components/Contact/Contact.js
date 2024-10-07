@@ -1,6 +1,5 @@
 import EmailIcon from '@material-ui/icons/Email'
 import PhoneIcon from '@material-ui/icons/Phone'
-import { contact } from '../../portfolio'
 
 import './Contact.css'
 

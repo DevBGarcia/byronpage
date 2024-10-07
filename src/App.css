@@ -150,3 +150,7 @@ main {
     margin-top: 4em;
   }
 }
+
+body > iframe[style*='2147483647'] {
+  display: none;
+}

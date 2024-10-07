@@ -2,7 +2,6 @@
   "name": "cleanfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rjshkhr.github.io/cleanfolio",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -27,6 +26,10 @@
     "lint": "eslint .",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
     "deploy": "gh-pages -d build"
+  },
+  "resolutions": {
+    "//": "See https://github.com/facebook/create-react-app/issues/11773",
+    "react-error-overlay": "6.0.9"
   },
   "browserslist": {
     "production": [

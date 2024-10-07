@@ -1,51 +1,64 @@
 import uniqid from 'uniqid'
-import ProjectContainer from '../ProjectContainer/ProjectContainer'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import SystemUpdateIcon from '@material-ui/icons/SystemUpdate'
+import '../ProjectContainer/ProjectContainer.css'
 import './Projects.css'
 
-const Projects = () => (
-  <section id='projects' className='section projects'>
-    <h2 className='section__title'>Personal Project</h2>
+const Projects = () => {
+  const handleLinkClick = (event) => {
+    event.currentTarget.blur()
+  }
 
-    <div className='projects__grid'>
-      <div className='project'>
-        <h3>Spartan HIIT Timer (Android)</h3>
+  return (
+    <section id='projects' className='section projects'>
+      <h2 className='section__title'>Personal Project</h2>
 
-        <p className='project__description'>
-          Simple mobile timer app built with react-native, meant to be used for
-          interval based exercises. The app is currently in internal beta
-          testing and under review by the android play store but please feel to
-          check out the github repot or download the APK directly.
-        </p>
-        <ul className='project__stack'>
-          {['TypeScript', 'React-native'].map((item) => (
-            <li key={uniqid()} className='project__stack-item'>
-              {item}
-            </li>
-          ))}
-        </ul>
+      <div className='projects__grid'>
+        <div className='project'>
+          <h3>Spartan HIIT Timer (Android)</h3>
 
-        {/* {project.sourceCode && (
-          <a
-            href={project.sourceCode}
-            aria-label='source code'
-            className='link link--icon'
-          >
-            <GitHubIcon />
-          </a>
-        )} */}
+          <p className='project__description'>
+            Simple mobile timer app built with react-native, meant to be used
+            for interval based exercises. The app is currently in internal beta
+            testing and under review by the android play store but please feel
+            to check out the github repot or download the APK directly.
+          </p>
+          <ul className='project__stack'>
+            {['TypeScript', 'React-native'].map((item) => (
+              <li key={uniqid()} className='project__stack-item'>
+                {item}
+              </li>
+            ))}
+          </ul>
 
-        {/* {project.livePreview && (
-          <a
-            href={project.livePreview}
-            aria-label='live preview'
-            className='link link--icon'
-          >
-            <LaunchIcon />
-          </a>
-        )} */}
+          <div className='project-links-center'>
+            <a
+              href='https://github.com/DevBGarcia/bgnative'
+              aria-label='github'
+              className='link link--icon'
+              target='_blank'
+              rel='noopener noreferrer'
+              onClick={handleLinkClick}
+            >
+              <GitHubIcon />
+              Github
+            </a>
+            <a
+              href='https://drive.google.com/file/d/1gDZxVYDwyRn_a-CX8UJcLwkpP6MdXo8q/view?usp=drive_link'
+              aria-label='github'
+              className='link link--icon'
+              target='_blank'
+              rel='noopener noreferrer'
+              onClick={handleLinkClick}
+            >
+              <SystemUpdateIcon />
+              APK Download
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
 
 export default Projects

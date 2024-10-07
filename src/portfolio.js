@@ -9,22 +9,19 @@ const skills = [
   // if there are no skills, Skills section won't show up
   'JavaScript',
   'TypeScript',
-  'HTML',
-  'CSS',
   'React',
   'React-Native',
-  'Redux',
-  'zustand',
+  'HTML',
+  'CSS',
   'Material UI',
   'Git',
   'Jest',
   'Netlify',
   'AWS',
+  'REST API',
+  'SQL',
+  'C/C++',
+  'Java',
 ]
 
-const contact = {
-  // email is optional - if left empty Contact section won't show up
-  email: 'devbgarcia@mail.com',
-}
-
-export { header, skills, contact }
+export { header, skills }

@@ -1,5 +1,6 @@
 .contact {
   flex-direction: column;
+  margin-bottom: 32px;
 }
 
 .link--icon {
